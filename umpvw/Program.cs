@@ -138,7 +138,9 @@ namespace umpvw
             if (!File.Exists(pipePrefix + mpvPipe))
             {
                 //ensure we are launching the mpv executable from the current folder. also launch the .exe specifically as we don't need the command line.
-                Process.Start(mpvPath, @"--input-ipc-server=" + pipePrefix + mpvPipe);
+                // Process.Start(mpvPath, @"--input-ipc-server=" + pipePrefix + mpvPipe);
+
+                NativeUtils.CreateProcessWithBreakout(mpvPath, @"--input-ipc-server=" + pipePrefix + mpvPipe);
             }
             var pipe = new NamedPipeClientStream(mpvPipe);
             pipe.Connect();

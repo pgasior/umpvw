@@ -51,7 +51,7 @@
     <ApplicationIcon>mpv-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>65761D4409142FF2EC0E22F32D392C6B07CF206F</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>768EDD58901A4ED40E12716E7728619498ECEAC3</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>umpvw_TemporaryKey.pfx</ManifestKeyFile>
@@ -82,6 +82,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NativeUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
